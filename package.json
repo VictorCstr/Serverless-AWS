@@ -1,0 +1,25 @@
+{
+  "name": "nodeless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "optimize.js",
+  "scripts": {
+    "predeploy": "npm uninstall sharp && npm install --platform=linux --arch=x64 --target=8.10.0 sharp",
+    "deploy": "serverless deploy",
+    "postdeploy": "npm uninstall sharp && npm install sharp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorCstr/Serverless-AWS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorCstr/Serverless-AWS/issues"
+  },
+  "homepage": "https://github.com/VictorCstr/Serverless-AWS#readme",
+  "dependencies": {
+    "sharp": "^0.30.7"
+  }
+}
